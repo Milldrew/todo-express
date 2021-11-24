@@ -2,7 +2,7 @@ const express = require("express");
 const { join } = require("path");
 express.static("./public");
 const app = express();
-const port = 8800;
+const port = 8080;
 const staticDir = "./build";
 app.use(express.static(staticDir));
 

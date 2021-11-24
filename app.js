@@ -3,7 +3,7 @@ const { join } = require("path");
 express.static("./public");
 const app = express();
 const port = 8800;
-const staticDir = "./todo-reactjs/build";
+const staticDir = "./build";
 app.use(express.static(staticDir));
 
 app.get("*", (req, res) => {
